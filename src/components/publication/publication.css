@@ -1,0 +1,77 @@
+.pubContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    padding: 0 30px;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.cardContainer {
+    background-color: white;
+    width: 300px;
+    margin: 2rem 1rem;
+    height: 50vh;
+    border-bottom: 5px solid;
+}
+
+.cardImg {
+    height: 20vh;
+    background-size: contain;
+    background-position: center;
+}
+
+.cardBody {
+    height: 20vh;
+    padding: 10px 15px;
+}
+
+.cardTitle {
+    font-family: 'PT Sans', sans-serif;
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin: 10px 0;
+}
+
+.badge {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    margin-right: 10px;
+    padding: 2px 15px;
+    border-radius: 5px;
+}
+
+.cardDesc {
+    font-family: 'Roboto', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.cardFooter {
+    height: 10vh;
+    padding: 5px 15px;
+}
+
+.cardBtn {
+    color: white;
+    background-color: #0184ff;
+    border: 2px solid #0184ff;
+    font-size: 0.8rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    width: 100%;
+    padding: 6px 20px;
+    transition: 300ms;
+    text-decoration: none;
+}
+
+.cardBtn:hover {
+    background-color: transparent;
+    color: black;
+}

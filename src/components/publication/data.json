@@ -1,0 +1,44 @@
+{
+    "articles": [
+        {
+            "title": "RealSketch",
+            "description": "GAN based photo realistic image generator using Nested U-Net",
+            "isPaper": true,
+            "published": false,
+            "url": "#",
+            "imgUrl": "./assets/images/paper.png"
+        },
+        {
+            "title": "Web Components in a Nutshell",
+            "description": "Fundamentals of native browser web components and how to create them.",
+            "isPaper": false,
+            "published": true,
+            "url": "https://levelup.gitconnected.com/web-components-in-a-nutshell-1e114aa971b9",
+            "imgUrl": "./assets/images/js.png"
+        },
+        {
+            "title": "Ionic Currency Converter",
+            "description": "Let’s learn ionic by creating a simple real-world application.",
+            "isPaper": false,
+            "published": true,
+            "url": "https://levelup.gitconnected.com/ionic-currency-converter-8f33d3d76d2d",
+            "imgUrl": "./assets/images/ionic.png"
+        },
+        {
+            "title": "JavaScript ES10/ES2019 Features",
+            "description": "New features of ES10/ECMAScript 2019",
+            "isPaper": false,
+            "published": true,
+            "url": "https://levelup.gitconnected.com/javascript-es10-es2019-features-d80c4fca6094",
+            "imgUrl": "./assets/images/es10.png"
+        },
+        {
+            "title": "Article is being cooked!",
+            "description": "Yest to be released! Stay tuned",
+            "isPaper": false,
+            "published": false,
+            "url": "https://levelup.gitconnected.com/javascript-es10-es2019-features-d80c4fca6094",
+            "imgUrl": "./assets/images/es10.png"
+        }
+    ]
+}

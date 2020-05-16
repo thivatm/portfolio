@@ -1,0 +1,36 @@
+.aboutContainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.primaryAbt {
+    width: 50%;
+}
+
+.secondaryAbt {
+    width: 50%;
+}
+
+.titleText {
+    color: var(--text-title);
+    font-family: 'PT Sans Caption', sans-serif;
+    margin: 0 6rem;
+    font-size: 4rem;
+    font-weight: bolder;
+    letter-spacing: 0.02em;
+}
+
+.paraText {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.1rem;
+    font-weight: 300;
+    text-align: justify;
+    color: white;
+    margin: 2rem 0 0 6rem;
+    letter-spacing: 0.15em;
+    line-height: 2rem;
+}
+

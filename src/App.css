@@ -1,7 +1,23 @@
-.App-footer {
-  text-align: center;
-  font-size: 15px;
-  padding: 15px 0;
-  color: rgb(19, 19, 19);
-  background-color: #E35757;
+:root {
+  font-size: 16px;
+  --text-primary: #ffffff;
+  --text-secondary: #E35757;
+  --text-title: #08FDC2;
+  --bg-primary: #1a1f27;
+  --bg-secondary: #0f1014;
+  --transition-speed: 50ms;
+}
+
+.mainContainer {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.contentBox {
+  width: 100%;
+}
+
+.tsparticles-canvas-el {
+  height: 100vh !important;
 }
