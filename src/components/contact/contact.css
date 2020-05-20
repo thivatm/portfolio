@@ -1,0 +1,104 @@
+.contactCont {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 100vh;
+    align-items: center;
+}
+
+.primaryContact {
+    width: 50%;
+}
+
+.secondaryContact {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    height: 100%;
+    background-color: #131b25;
+}
+
+.contactContents {
+    margin: auto;
+    width: 80%;
+}
+
+hr {
+    margin: 3rem 0 2rem;
+}
+
+input {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    height: 7vh;
+    margin: 5px auto;
+    padding: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid rgb(192, 192, 192);
+}
+
+textarea {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: 100%;
+    height: 15vh;
+    margin: 5px 0;
+    padding: 10px;
+    color: aliceblue;
+    background-color: transparent;
+    border-radius: 2px;
+    border: 2px solid rgb(192, 192, 192);
+}
+
+.emailBtn {
+    color: var(--text-primary);
+    background-color: transparent;
+    border: 2px solid var(--text-title);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    height: 7vh !important;
+    transition: 300ms;
+}
+
+.emailBtn:hover {
+    background-color: var(--text-title);
+    border: 2px solid var(--text-title);
+    color: black;
+}
+
+@media only screen and (max-width: 600px) {
+    .contactCont {
+        display: block;
+        overflow-y: scroll;
+    }
+
+    .primaryContact {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .primaryContact p {
+        text-align: left;
+    }
+    
+    .secondaryContact {
+        display: block;
+        width: 100%;
+        padding: 2rem 0;
+    }
+
+    .contactContents {
+        margin: auto;
+
+    }
+}

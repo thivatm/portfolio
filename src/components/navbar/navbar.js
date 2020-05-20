@@ -66,7 +66,7 @@ function NavBar() {
                     </Link>
                 </li>
 
-                <li class="nav-item">
+                {/* <li class="nav-item">
                     <Link to="#" class="nav-link">
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
@@ -85,10 +85,10 @@ function NavBar() {
                         </svg>
                         <span class="link-text">Projects</span>
                     </Link>
-                </li>
+                </li> */}
                 
                 <li class="nav-item">
-                    <Link to="#" class="nav-link">
+                    <Link to="/contact" class="nav-link">
                         <svg 
                             xmlns="http://www.w3.org/2000/svg"
                             width="24" 

@@ -12,6 +12,7 @@ import NavBar from './components/navbar/navbar';
 import Home from './components/home/home';
 import About from "./components/about/about";
 import Publication from "./components/publication/publication";
+import Contact from "./components/contact/contact";
 
 function App() {
   return (
@@ -44,6 +45,10 @@ function App() {
 
               <div className="contentBox">
                 <Switch>
+
+                  <Route path="/contact">
+                    <Contact />
+                  </Route>
 
                   <Route path="/publication">
                     <Publication />

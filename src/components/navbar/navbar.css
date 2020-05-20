@@ -109,22 +109,4 @@ main {
     height: 100vh;
 }
 
-/* .navbar:hover {
-    width: 16rem;
-}
-
-.navbar:hover .link-text {
-    display: inline;
-    transition: var(--transition-speed);
-}
-
-.navbar:hover .logo svg
-{
-    margin-left: 11rem;
-}
-
-.navbar:hover .logo-text
-{
-    left: 0px;
-} */
 }

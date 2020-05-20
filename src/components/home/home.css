@@ -26,16 +26,17 @@
 }
 
 .infoText {
-    font-family: 'PT Sans Caption', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
-    color: white;
-    margin: 2rem 6rem;
     font-weight: 300;
+    color: #c7c7c7;
+    margin: 2rem 6rem;
     letter-spacing: 0.15em;
 }
 
 .coloured {
     color: var(--text-secondary);
+    font-weight: 400;
 }
 
 .secondary {
@@ -56,13 +57,14 @@
     color: var(--text-primary);
     background-color: transparent;
     border: 2px solid var(--text-secondary);
-    font-family: 'Muli', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 0.9rem;
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.15em;
     padding: 12px 40px;
     margin: 2rem 6rem;
+    width: 30%;
     transition: 300ms;
 }
 
@@ -70,3 +72,40 @@
     background-color: var(--text-secondary);
     color: black;
 }
+
+@media only screen and (max-width: 600px) {
+    .homeContainer {
+        display: block;
+        overflow-y: scroll;
+    }
+    
+    .primary {
+        width: 100%;
+        padding: 20px 15px;
+    }
+
+    .secondary {
+        width: 100%;
+    }
+
+    .titleName, .titleJob {
+        margin: 1rem;
+        font-size: 2rem;
+        letter-spacing: 0.05em;
+    }
+    
+    .titleJob {
+        margin: 1rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+    
+    .infoText {
+        font-size: 0.9rem;
+        margin: 1rem;
+    }
+
+    .primaryBtn {
+        display: none;
+    }
+  }

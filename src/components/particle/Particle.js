@@ -13,15 +13,31 @@ export default () => (
   >
     <Particles
       params={{
-        particles: {
-          line_linked: {
-            shadow: {
-              enable: true,
-              color: "#E35757",
-              blur: 2
-            }
-          }
-        }
+        "particles": {
+	        "number": {
+	            "value": 60,
+	            "density": {
+	                "enable": false
+	            }
+	        },
+	        "size": {
+	            "value": 5,
+	            "random": true,
+	            "anim": {
+	                "speed": 4,
+	                "size_min": 0.3
+	            }
+	        },
+	        "line_linked": {
+	            "enable": false
+	        },
+	        "move": {
+	            "random": true,
+	            "speed": 1,
+	            "direction": "right",
+	            "out_mode": "out"
+	        }
+	    }
       }}
       style={{
         backgroundColor: '#0f1014'
