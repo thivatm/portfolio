@@ -17,7 +17,7 @@ function Home() {
 
             <div className="secondary">
                 <div className="avatarImg">
-                    <img width="100%" src='./assets/images/me.jpg' alt="thiva" />
+                    <img width="100%" src='/assets/images/me.jpg' alt="thiva" />
                 </div>
                 <div align="center" className="socialbtns">
                     <ul>
