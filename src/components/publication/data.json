@@ -31,14 +31,6 @@
             "published": true,
             "url": "https://levelup.gitconnected.com/javascript-es10-es2019-features-d80c4fca6094",
             "imgUrl": "/assets/images/es10.png"
-        },
-        {
-            "title": "Article is being cooked!",
-            "description": "Yest to be released! Stay tuned",
-            "isPaper": false,
-            "published": false,
-            "url": "https://levelup.gitconnected.com/javascript-es10-es2019-features-d80c4fca6094",
-            "imgUrl": ""
         }
     ]
 }

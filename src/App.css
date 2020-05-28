@@ -5,7 +5,7 @@
   --text-title: #08FDC2;
   --bg-primary: #1a1f27;
   --bg-secondary: #0f1014;
-  --transition-speed: 50ms;
+  --transition-speed: 300ms;
 }
 
 .mainContainer {
@@ -16,7 +16,25 @@
 
 .contentBox {
   width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
 }
+
+.contentBox::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px var(--bg-secondary);
+  background-color: transparent;
+}
+
+.contentBox::-webkit-scrollbar {
+  position: relative;
+  width: 10px;
+  background-color: var(--bg-primary);
+}
+
+.contentBox::-webkit-scrollbar-thumb {
+  background-color: var(--bg-secondary);
+}
+
 
 .tsparticles-canvas-el {
   height: 100vh !important;
@@ -55,6 +73,7 @@ a, a:hover {
 @media only screen and (max-width: 600px) {
   .mainContainer {
     flex-direction: column;
+    height: 100vh;
     overflow-y: scroll;
   }
 
