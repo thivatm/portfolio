@@ -1,11 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './home.css'
 import { Link } from "react-router-dom";
 
 function Home() {
+
+    useEffect(() => {
+
+    },[]);
+
     return (
         <div className="homeContainer">
-
             <div className="primary">
                 <p className="titleName">Hello,<br /> I'm <span className="coloured">Thivagar</span></p>
                 <p className="titleJob">Software Engineer</p>

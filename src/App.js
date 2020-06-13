@@ -6,6 +6,7 @@ import {
   Route
 } from "react-router-dom";
 
+
 // Components
 import ParticleComponent from "./components/particle/Particle";
 import NavBar from './components/navbar/navbar';
@@ -64,9 +65,12 @@ function App() {
 
                 </Switch>
               </div>
-            </div>
-          </Router>
 
+              {/* <NavBar /> */}
+            </div>
+            
+          </Router>
+          
         </div>
       </div>
     </div>

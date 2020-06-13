@@ -1,5 +1,6 @@
 .navbar {
     background-color: var(--bg-primary);
+    height: 100vh;
 }
 
 .navbar-nav {
@@ -79,35 +80,58 @@
 
 /* Small screens */
 @media only screen and (max-width: 600px) {
-.navbar {
-    bottom: 0;
-    width: 100vw;
-    height: 5rem;
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        position: fixed;
+        z-index: 10;
+    }
+
+    .logo {
+        display: none;
+    }
+
+    .navbar-nav {
+        flex-direction: row;
+    }
+
+    .nav-link {
+        justify-content: center;
+    }
+
+    main {
+        margin: 0;
+    }
 }
 
-.logo {
-    display: none;
-}
 
-.navbar-nav {
-    flex-direction: row;
-}
-
-.nav-link {
-    justify-content: center;
-}
-
-main {
-    margin: 0;
-}
-}
-
-/* Large screens */
-@media only screen and (min-width: 600px) {
-.navbar {
-    top: 0;
-    width: 4rem;
-    height: 100vh;
-}
-
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .navbar {
+        bottom: 0;
+        width: 100vw;
+        height: 5rem;
+        position: fixed;
+        z-index: 10;
+    }
+    
+    .logo {
+        display: none;
+    }
+    
+    .navbar-nav {
+        flex-direction: row;
+    }
+    
+    .nav-link {
+        justify-content: center;
+    }
+    
+    main {
+        margin: 0;
+    }
 }

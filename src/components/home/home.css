@@ -64,7 +64,7 @@
     letter-spacing: 0.15em;
     padding: 10px 20px;
     margin: 2rem 6rem;
-    width: 25%;
+    width: 35%;
     transition: 300ms;
 }
 
@@ -109,3 +109,47 @@
         display: none;
     }
   }
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .homeContainer {
+        display: block;
+        overflow-y: scroll;
+    }
+    
+    .primary {
+        width: 100%;
+        padding: 40px 15px;
+        text-align: center;
+    }
+
+    .secondary {
+        width: 100%;
+        padding: 40px 15px;
+    }
+
+    .titleName, .titleJob {
+        margin: 1rem;
+        font-size: 6rem;
+        letter-spacing: 0.05em;
+    }
+    
+    .titleJob {
+        margin: 1rem;
+        font-size: 4rem;
+        font-weight: 700;
+    }
+    
+    .infoText {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .primaryBtn {
+        display: none;
+    }
+
+}

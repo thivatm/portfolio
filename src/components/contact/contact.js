@@ -1,19 +1,22 @@
-import React from "react";
+import React, { useState } from "react";
 import "./contact.css";
 import emailjs from 'emailjs-com';
 
-function sendEmail(e) {
-  e.preventDefault();
-  
-  emailjs.sendForm('gmail', 'portfolio', e.target, 'user_x9dicMKpKz6iDNMboZQY1')
-    .then((result) => {
-        alert('Message Sent')
-    }, (error) => {
-        console.log(error.text);
-    });
-}
-
 function Contact() {
+  const [sent, setSent] = useState(false);
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+    setSent(true);
+
+    emailjs.sendForm('gmail', 'portfolio', e.target, 'user_x9dicMKpKz6iDNMboZQY1')
+      .then((result) => {
+          setSent(false);
+      }, (error) => {
+          console.log(error.text);
+      });
+  }
+
   return (
     <div className="contactCont">
       <div class="primaryContact">
@@ -27,30 +30,38 @@ function Contact() {
         </p>
       </div>
 
+      {sent ? 
+      <div className="loadingScreen">
+        <img src="/assets/loading/send.svg" alt="loading.."/>
+      </div> : ""}
+
       <div className="secondaryContact">
         <div className="contactContents">
             <form onSubmit={sendEmail} className="contactForm">
-            <input
-                type="text"
-                class="form-control"
-                id="name"
-                placeholder="FULL NAME"
-                name="from_name"
-            />
-            <input
-                type="email"
-                class="form-control"
-                id="email"
-                placeholder="EMAIL"
-                name="from_email"
-            />
-            <textarea
-                class="form-control"
-                rows="10"
-                placeholder="MESSAGE"
-                name="message"
-            ></textarea>
-            <input type="submit" className="emailBtn" value="Send" />
+              <input
+                  type="text"
+                  class="form-control"
+                  id="name"
+                  placeholder="FULL NAME"
+                  name="from_name"
+                  required
+              />
+              <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  placeholder="EMAIL"
+                  name="from_email"
+                  required
+              />
+              <textarea
+                  class="form-control"
+                  rows="10"
+                  placeholder="MESSAGE"
+                  name="message"
+                  required
+              ></textarea>
+              <input type="submit" className="emailBtn" value="Send" />
             <hr style={{ border: "0.5px solid white" }} />
             </form>
             <div align="center" className="socialbtns">
@@ -76,10 +87,12 @@ function Contact() {
             </ul>
             </div>
         </div>
-
       </div>
+
     </div>
   );
 }
+
+
 
 export default Contact;

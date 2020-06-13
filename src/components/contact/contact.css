@@ -76,6 +76,21 @@ textarea {
     color: black;
 }
 
+.loadingScreen {
+    display: flex;
+    position: absolute;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: #0f0f0fcc;
+}
+
+.loadingScreen img {
+    margin: auto;
+    width: 10%;
+}
+
 @media only screen and (max-width: 600px) {
     .contactCont {
         display: block;
@@ -88,9 +103,54 @@ textarea {
     }
 
     .primaryContact p {
-        text-align: left;
+        text-align: center;
     }
     
+    .secondaryContact {
+        display: block;
+        width: 100%;
+        height: auto;
+        padding: 2rem 0;
+    }
+
+    .contactContents {
+        margin: 0 auto 4rem;
+    }
+    
+    .loadingScreen img {
+        width: 20%;
+    } 
+
+}
+
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .contactCont {
+        display: block;
+        overflow-y: scroll;
+        height: auto;
+    }
+
+    .primaryContact {
+        width: 100%;
+        padding: 40px 15px;
+    }
+
+    .primaryContact p {
+        text-align: center;
+    }
+    
+    .titleText {
+        font-size: 5rem;
+    }
+
+    .paraText {
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+
     .secondaryContact {
         display: block;
         width: 100%;
@@ -98,7 +158,16 @@ textarea {
     }
 
     .contactContents {
-        margin: auto;
-
+        margin: 0 auto 4rem;
     }
+
+    .socialbtns li {
+        font-size: 2rem;
+        margin: 10px 25px;
+    }
+
+    .loadingScreen img {
+        width: 20%;
+    } 
+
 }

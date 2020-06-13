@@ -66,8 +66,8 @@ function NavBar() {
                     </Link>
                 </li>
 
-                {/* <li class="nav-item">
-                    <Link to="#" class="nav-link">
+                <li class="nav-item">
+                    <a href="/assets/docs/cv.pdf" target="_blank" class="nav-link">
                         <svg 
                             xmlns="http://www.w3.org/2000/svg" 
                             width="24" 
@@ -83,9 +83,9 @@ function NavBar() {
                                 <line x1="16" y1="8" x2="2" y2="22"></line>
                                 <line x1="17.5" y1="15" x2="9" y2="15"></line>
                         </svg>
-                        <span class="link-text">Projects</span>
-                    </Link>
-                </li> */}
+                        <span class="link-text">CV</span>
+                    </a>
+                </li>
                 
                 <li class="nav-item">
                     <Link to="/contact" class="nav-link">

@@ -35,6 +35,12 @@
   background-color: var(--bg-secondary);
 }
 
+.contentBox img {
+  width: 100%;
+  margin: auto;
+  display: block;
+  align-items: center;
+}
 
 .tsparticles-canvas-el {
   height: 100vh !important;
@@ -72,9 +78,21 @@ a, a:hover {
 
 @media only screen and (max-width: 600px) {
   .mainContainer {
-    flex-direction: column;
+    flex-direction: column-reverse;
     height: 100vh;
     overflow-y: scroll;
   }
+}
+
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .mainContainer {
+      flex-direction: column-reverse;
+      height: 100vh;
+      overflow-y: scroll;
+    }
 
 }

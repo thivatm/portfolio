@@ -35,13 +35,11 @@ function About() {
       <div className="primaryAbt">
         <p className="titleText">About Me</p>
         <p className="paraText">
-          I'm currently a software engineering undergraduate, a fullstack
-          software developer always fueled by my passion. I enjoy building
-          everything, from small business sites to rich interactive web apps.
+          I am a Software Engineer, a Fullstack
+          Developer always fueled by my passion. I always enjoy building
+          everything, from small business sites to rich interactive web applications.
           I'm able to master new skills and concepts quickly which I consider as
-          the most essential aspect in developing my career. I'm also a
-          passionate photographer dedicated to inspire the world in creating
-          their moments.
+          the most essential aspect in developing my career.
         </p>
         <Link to="/contact">
           <input type="button" className="primaryBtn" value="Contact Me" />
